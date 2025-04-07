@@ -53,6 +53,7 @@ nav ul{
 }
 .Home div p{
     padding:20px;
+    text-align:center;
     font-size:22px;
 }
 nav ul li{
@@ -67,6 +68,16 @@ nav ul li:hover{
 nav ul a{
     color:#ddd;
     text-decoration:none;
+}
+
+.images{
+    display:flex;
+    justify-content: center;
+    column-gap:10px;
+    width:600px;
+}
+.images img{
+    width:100%;
 }
 section h2{
     text-align:center;
@@ -99,7 +110,7 @@ section h2{
 header{
     display:flex;
     align-items:center;
-    width:80%;
+    width:100%;
     justify-content: space-between;
 }
 header nav ul{
@@ -113,32 +124,26 @@ main{
     display:flex;
     flex-direction:column;
     align-items:center;
+    padding:0;
+    margin:0;
 }
 section{
     display:flex;
     flex-direction:column;
     align-items:center;
-    margin:15px;
+    margin:15px 0;
     min-height:100px;
     background-color:#7e7b7b2a;
-    width:90%;
+    width:100%;
     border-radius:7px;
     padding-bottom:30px;
 }
 
-.Home div:last-child{
-    display:flex;
-    column-gap:20px;
-}
-.Home div:last-child img{
-    width:400px;
-
-}
-.Contacts{
+/* .Contacts{
     width:40%;
     padding-bottom:15px;
     
-}
+} */
 header h1 span{
     color:#09a2a2c0;
 }
@@ -158,4 +163,33 @@ footer{
 }
 .hide{
     display:none;
+}
+
+
+@media (max-width:698px){
+    header{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+}
+@media (max-width:650px){
+    section{
+        margin-left:10px;
+    }
+}
+@media (max-width:1425px){
+    .images{
+        flex-direction:column;
+        column-gap:10px;
+        align-items:center;
+    }
+    .images img{
+        width:85%;
+    }
+}
+@media (max-width:558px){
+    .images img{
+        width:70%;
+    }
 }
